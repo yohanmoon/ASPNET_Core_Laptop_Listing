@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mvc_Laptop_Manually", "Mvc_Laptop_Manually\Mvc_Laptop_Manually.csproj", "{38DADAC2-5E33-4238-B0B0-AC2B770AF039}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC_Laptop", "MVC_Laptop\MVC_Laptop.csproj", "{F2820D09-BCE2-475A-B20F-C21BEDA980F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC_EShop", "MVC_EShop\MVC_EShop.csproj", "{6CB419AB-BC53-432A-806C-CE11624FA586}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{38DADAC2-5E33-4238-B0B0-AC2B770AF039}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38DADAC2-5E33-4238-B0B0-AC2B770AF039}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38DADAC2-5E33-4238-B0B0-AC2B770AF039}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2820D09-BCE2-475A-B20F-C21BEDA980F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2820D09-BCE2-475A-B20F-C21BEDA980F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2820D09-BCE2-475A-B20F-C21BEDA980F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2820D09-BCE2-475A-B20F-C21BEDA980F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CB419AB-BC53-432A-806C-CE11624FA586}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CB419AB-BC53-432A-806C-CE11624FA586}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CB419AB-BC53-432A-806C-CE11624FA586}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CB419AB-BC53-432A-806C-CE11624FA586}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
