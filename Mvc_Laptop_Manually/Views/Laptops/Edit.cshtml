@@ -1,0 +1,107 @@
+﻿@model Mvc_Laptop_Manually.Models.Laptop
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Laptop</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="LaptopId" />
+            <div>
+                
+                    @if (Model.ImageName != null)
+                    {
+                        <img src="@("~/image/" + Model.ImageName)" alt="Model.ImageName" asp-append-version="true" width="150" height="100" />
+                    }
+                
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="BrandId" class="control-label"></label>
+                <select asp-for="BrandId" class="form-control" asp-items="ViewBag.BrandId"></select>
+                <span asp-validation-for="BrandId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Model" class="control-label"></label>
+                <input asp-for="Model" class="form-control" />
+                <span asp-validation-for="Model" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ScreenSizeId" class="control-label"></label>
+                <select asp-for="ScreenSizeId" class="form-control" asp-items="ViewBag.ScreenSizeId"></select>
+                <span asp-validation-for="ScreenSizeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ResolutionId" class="control-label"></label>
+                <select asp-for="ResolutionId" class="form-control" asp-items="ViewBag.ResolutionId"></select>
+                <span asp-validation-for="ResolutionId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CPUId" class="control-label"></label>
+                <select asp-for="CPUId" class="form-control" asp-items="ViewBag.CPUId"></select>
+                <span asp-validation-for="CPUId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GPUId" class="control-label"></label>
+                <select asp-for="GPUId" class="form-control" asp-items="ViewBag.GPUId"></select>
+                <span asp-validation-for="GPUId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RAMId" class="control-label"></label>
+                <select asp-for="RAMId" class="form-control" asp-items="ViewBag.RAMId"></select>
+                <span asp-validation-for="RAMId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HardDrive" class="control-label"></label>
+                <input asp-for="HardDrive" class="form-control" />
+                <span asp-validation-for="HardDrive" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Weight" class="control-label"></label>
+                <input asp-for="Weight" class="form-control" />
+                <span asp-validation-for="Weight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <textarea asp-for="Description" class="form-control"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Favorite" /> @Html.DisplayNameFor(model => model.Favorite)
+                </label>
+            </div>
+            <div class="form-group">
+               
+
+
+
+                <label asp-for="ImageFile" class="control-label"></label>
+                <input asp-for="ImageFile" accept="image/*" />
+                <span asp-validation-for="ImageFile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
